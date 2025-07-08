@@ -48,8 +48,10 @@ def Git_commit(chemin = "", champ_saisie_message_commit =""):
     if not chemin == "" and not message == "":
         Git.git_commit(chemin, message)
     
-    
-
+background = "#D8FDFD"
+button_color1 = '#BCECEC'
+button_color2 = '#ABD7D7'
+button_color3 = '#80A1A1'
 # Utilisation :
 largeur_ecran, hauteur_ecran = get_screen_resolution_tkinter()
 
@@ -60,7 +62,7 @@ fenetre = tk.Tk()
 fenetre.title("EasyGit")
 fenetre.geometry(f"{largeur_ecran}x{hauteur_ecran}+600+200") #Largeur x Hauteur
 
-fenetre.configure(bg="white")
+fenetre.configure(bg=background)
 
 ttk.Style().theme_use("clam")
 
@@ -68,13 +70,13 @@ ttk.Style().theme_use("clam")
 style = ttk.Style()
 style.theme_use("alt")
 
-style.configure("My.TLabelframe", background="white") # Utilise le code hexadécimal directement
+style.configure("My.TLabelframe", background=background) # Utilise le code hexadécimal directement
 
 
-style.configure("TButton", background="#C0C0C0") # Utilise le code hexadécimal directement
+style.configure("TButton", background=button_color1) # Utilise le code hexadécimal directement
 style.map("TButton",background=[
-        ('active', '#808080'),  
-        ('pressed', '#808080')])  
+        ('active', button_color2),  
+        ('pressed', button_color3)])  
 
 
 # --- 3. Configure le style "TEntry" ---
