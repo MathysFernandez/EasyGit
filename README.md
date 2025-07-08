@@ -53,4 +53,5 @@ To clone the project, and run the application locally:
 
 Clone this repository in bash:
 ```bash
-git clone [https://github.com/MathysFernandez/EasyGit.git](https://github.com/MathysFernandez/EasyGit.git)```
+git clone [https://github.com/MathysFernandez/EasyGit.git](https://github.com/MathysFernandez/EasyGit.git)
+```
